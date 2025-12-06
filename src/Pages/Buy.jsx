@@ -113,7 +113,7 @@ export default function Buy() {
     setActiveImage((p) => (p === 0 ? selectedImages.length - 1 : p - 1));
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 md:p-6 flex flex-col lg:flex-row gap-6">
+    <div className="min-h-screen bg-gray-50 p-4 md:p-6 flex flex-col justify-center md:flex-row gap-6">
       {/* SIDEBAR — Mobile full width — Desktop fixed width */}
       <aside className="w-full lg:w-72 bg-white rounded-2xl shadow p-6 space-y-6 h-fit">
         <div className="flex justify-between items-center">
@@ -241,8 +241,7 @@ export default function Buy() {
 
       {/* MAIN CONTENT */}
       <main className="flex-1">
-        {/* TOP BAR */}
-        <div className="flex flex-col md:flex-row justify-between  items-center bg-white border border-[#E6E9ED] py-3 px-4 rounded-lg mb-6 gap-3">
+        <div className="flex flex-col md:flex-row md:justify-between  items-center bg-white border border-[#E6E9ED] py-3 px-4 rounded-lg mb-6 gap-3">
           <h2 className="font-semibold text-[20px]">
             Property
             <span className="text-[#697483] text-[16px] font-medium ml-2">
@@ -264,7 +263,7 @@ export default function Buy() {
         </div>
 
         {/* PROPERTY CARDS GRID (Responsive) */}
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6">
           {currentProperties.length === 0 ? (
             <p className="text-center w-full text-gray-500">
               No properties found.
@@ -364,7 +363,7 @@ export default function Buy() {
       {/* IMAGE MODAL */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/40 flex justify-center items-center z-50 p-4">
-          <div className="bg-white p-4 rounded-2xl shadow-2xl w-full max-w-4xl relative">
+          <div className="bg-white p-4 rounded-2xl shadow-2xl w-full max-w-3xl md:max-w-4xl relative">
             <button
               onClick={closeModal}
               className="absolute top-[-12px] right-[-12px] bg-gray-200 hover:bg-gray-300 p-2 rounded-full"

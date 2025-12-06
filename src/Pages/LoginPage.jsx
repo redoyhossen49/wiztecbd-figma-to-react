@@ -51,7 +51,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex h-screen max-w-5xl mx-auto bg-white">
+    <div className="flex  h-screen max-w-5xl mx-auto bg-white">
       {/* Left Section */}
       <div className="w-full md:w-1/2 flex flex-col justify-center  gap-3 text-center px-10 md:px-20">
         {/* Logo */}
@@ -185,12 +185,12 @@ export default function LoginPage() {
       </div>
 
       {/* Right Section */}
-      <div className="flex flex-col md:flex-row w-1/2 items-center justify-center p-10">
+      <div className=" hidden md:flex  w-1/2 items-center justify-center p-10">
         <div className="rounded-3xl overflow-hidden ">
           <img
             src="/login image.jfif"
             alt="Login Visual"
-            className="object-cover h-full w-full rounded-[0px] [clip-path:polygon(0%_15%,0%_0%,15%_0%,85%_0%,100%_0%,100%_15%,100%_85%,100%_100%,85%_100%,15%_100%,0%_100%,0%_85%)]"
+            className="object-cover h-full w-full "
           />
         </div>
       </div>

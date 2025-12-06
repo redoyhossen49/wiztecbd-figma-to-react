@@ -64,7 +64,7 @@ export default function HeroMetrics() {
 
             {/* Email Input */}
             <div className="mt-8 flex justify-center">
-              <div className="flex flex-row items-center gap-2 sm:gap-0 w-full max-w-xl bg-white/10 border border-white/20 backdrop-blur-sm p-2 rounded-full">
+              <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-0 w-full max-w-xl bg-white/10 border border-white/20 backdrop-blur-sm p-2 rounded-full">
                 <input
                   type="email"
                   placeholder="Enter Your Email Here"
