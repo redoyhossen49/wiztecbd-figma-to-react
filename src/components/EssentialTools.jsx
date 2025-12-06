@@ -38,41 +38,69 @@ export default function EssentialTools() {
   ];
 
   return (
-    <div className="w-full flex flex-col items-center bg-[#F7F1E8] py-16 px-6">
+    <div className="w-full flex flex-col items-center bg-[#F7F1E8] py-14 px-4 sm:px-6 lg:px-10">
+      {/* Heading */}
       <div className="text-center mb-12">
         <p className="text-xs tracking-wide font-semibold mb-2">
           ESSENTIAL TOOLS
         </p>
-        <h1 className="text-4xl font-bold leading-tight">
+
+        <h1 className="text-3xl sm:text-4xl font-bold leading-tight">
           Essential Tools
           <br />
           Zero Distractions
         </h1>
-        <p className="text-gray-600 mt-4 max-w-xl mx-auto">
+
+        <p className="text-gray-600 mt-4 max-w-xl mx-auto text-sm sm:text-base px-3">
           Create diverse products on the platform and leverage our powerful
           tools to drive sales within and beyond GrowHubs.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full">
+      {/* Grid */}
+      <div
+        className="
+          grid grid-cols-1 
+          sm:grid-cols-2 
+          lg:grid-cols-3 
+          gap-6 
+          max-w-6xl w-full
+        "
+      >
         {items.map((item, index) => (
-          <div key={index} className="rounded-2xl shadow-sm p-4 bg-white">
+          <div
+            key={index}
+            className="rounded-2xl shadow-sm p-5 bg-white hover:shadow-md transition-all"
+          >
             <div className="text-3xl mb-3">{item.icon}</div>
             <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
-            <p className="text-sm text-gray-600 mb-4">{item.desc}</p>
+            <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+              {item.desc}
+            </p>
             <a href="#" className="text-[#EFAF4B] text-sm font-medium">
               Learn more →
             </a>
           </div>
         ))}
 
-        <div className="bg-[#2D2A40] text-white rounded-2xl p-6 shadow-md h-full md:col-span-2-[#2D2A40] text-white rounded-2xl p-6 shadow-md h-full">
-          <h2 className="text-xl font-semibold mb-2">Enterprise plan</h2>
-          <p className="text-gray-300 mb-4 text-sm max-w-xl">
+        {/* Enterprise Card */}
+        <div
+          className="
+            bg-[#2D2A40] text-white rounded-2xl p-6 shadow-md 
+            sm:col-span-2 
+           
+          "
+        >
+          <h2 className="text-xl md:text-2xl font-semibold mb-2">
+            Enterprise plan
+          </h2>
+
+          <p className="text-gray-300 mb-4 text-sm md:text-base max-w-xl leading-relaxed">
             Full white-label platform hosted on a dedicated, auto-scaling
             server; includes branding freedom, private content protection, and
             24/7 service availability.
           </p>
+
           <a href="#" className="text-[#EFAF4B] text-sm font-medium">
             Learn more →
           </a>

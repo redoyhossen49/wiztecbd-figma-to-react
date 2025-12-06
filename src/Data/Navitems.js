@@ -2,7 +2,7 @@ export const navItems = [
   {
     id: 1,
     label: "Buy",
-    path: "/",
+    path: "/buy",
   },
   {
     id: 2,

@@ -46,7 +46,7 @@ export default function LoginPage() {
 
     // Redirect after 1.5 seconds
     setTimeout(() => {
-      navigate("/");
+      navigate("/buy");
     }, 1500);
   };
 
@@ -185,7 +185,7 @@ export default function LoginPage() {
       </div>
 
       {/* Right Section */}
-      <div className="hidden md:flex w-1/2 items-center justify-center p-10">
+      <div className="flex flex-col md:flex-row w-1/2 items-center justify-center p-10">
         <div className="rounded-3xl overflow-hidden ">
           <img
             src="/login image.jfif"
