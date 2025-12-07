@@ -28,7 +28,6 @@ export default function Buy() {
   const [showAllAmenities, setShowAllAmenities] = useState(false);
   const [sortOrder, setSortOrder] = useState("low");
 
-  // Unique lists
   const suburbs = [...new Set(properties.map((p) => p.suburb))];
   const propertyTypes = [...new Set(properties.flatMap((p) => p.propertyType))];
   const amenitiesList = [...new Set(properties.flatMap((p) => p.amenities))];
@@ -114,7 +113,7 @@ export default function Buy() {
 
   return (
     <div className="min-h-screen bg-gray-50 p-4 md:p-6 flex flex-col justify-center md:flex-row gap-6">
-      {/* SIDEBAR — Mobile full width — Desktop fixed width */}
+      {/* SIDEBAR  */}
       <aside className="w-full lg:w-72 bg-white rounded-2xl shadow p-6 space-y-6 h-fit">
         <div className="flex justify-between items-center">
           <h2 className="font-medium text-[16px]">Property Preference</h2>

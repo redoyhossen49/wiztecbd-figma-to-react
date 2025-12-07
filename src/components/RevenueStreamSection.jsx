@@ -16,30 +16,25 @@ export default function RevenueStreamSection() {
 
   return (
     <section className="w-full min-h-screen bg-[linear-gradient(180deg,#F7EFFF_0%,#F4D9FF_40%,#FFFFFF_100%)] pb-20 relative overflow-hidden">
-      {/* Top Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] md:w-[1100px] h-[350px] md:h-[500px] bg-[#ffd6ff] blur-[180px] opacity-60" />
 
       <div className="max-w-6xl mx-auto px-4  pt-20 relative z-10">
-        {/* Badge */}
         <div className="flex justify-center">
           <div className="px-4 py-1 rounded-full bg-[linear-gradient(135deg,#FCC3FF_0%,#F75EFF_100%)] text-xs font-semibold tracking-wider shadow-sm">
             DIVERSIFY REVENUE STREAM
           </div>
         </div>
 
-        {/* Heading */}
         <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-extrabold mt-6 text-[#1A1A1A] leading-tight">
           Maximise earnings with <br />
           <span className="text-[#000]">limitless revenue streams.</span>
         </h1>
 
-        {/* Description */}
         <p className="text-center text-gray-600 mt-4 max-w-2xl mx-auto text-sm sm:text-[15px]">
           Create and sell courses, consulting services, and communities – with
           Zero marketing cost and a built-in sales network.
         </p>
 
-        {/* Tabs */}
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-10">
           {tabs.map((t) => (
             <button
@@ -94,7 +89,6 @@ export default function RevenueStreamSection() {
               <img src="/revenue.png" className="w-full h-full object-cover" />
             </div>
 
-            {/* Floating Card */}
             <div
               className="
               absolute 

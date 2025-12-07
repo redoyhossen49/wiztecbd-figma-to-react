@@ -20,7 +20,6 @@ export default function TestimonialSection() {
         See how others grow with Growhubs — real stories, real success.
       </p>
 
-      {/* Marquee Wrapper */}
       <div className="relative w-full mt-16 overflow-hidden">
         <div className="flex gap-10 animate-marquee">
           {[...cards, ...cards].map((c, i) => (

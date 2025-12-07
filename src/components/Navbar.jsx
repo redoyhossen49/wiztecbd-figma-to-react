@@ -9,14 +9,12 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white shadow-md">
-      {/* BLOCK WITH CENTERED NAV & PROPER PADDING */}
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4  lg:px-6 py-4">
         {/* Logo Left */}
         <Link to="/" className="cursor-pointer">
           <img src="/wiztec-logo.png" alt="logo" className="h-10" />
         </Link>
 
-        {/* CENTER MENU — DESKTOP ONLY */}
         <ul className="hidden lg:flex space-x-10 absolute left-1/2 transform -translate-x-1/2">
           {navItems.map(({ id, label, path }) => (
             <li key={id}>
@@ -65,7 +63,6 @@ const Navbar = () => {
       {open && (
         <div className="lg:hidden bg-white shadow-inner">
           <div className="px-6 py-4 space-y-6">
-            {/* MOBILE MENU ITEMS */}
             <ul className="flex flex-col space-y-3 text-center">
               {navItems.map(({ id, label, path }) => (
                 <li key={id}>
@@ -86,7 +83,6 @@ const Navbar = () => {
               ))}
             </ul>
 
-            {/* FAVORITE + LOGIN — MOBILE */}
             <div className="flex flex-col items-center space-y-4">
               <button className="flex items-center text-gray-700 hover:text-red-600 transition">
                 <AiFillHeart className="text-2xl mr-2" />

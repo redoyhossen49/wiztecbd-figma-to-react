@@ -42,7 +42,6 @@ export default function HeroMetrics() {
 
         {/* MAIN CONTAINER */}
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-20 pb-24">
-          {/* Top Badge */}
           <div className="flex justify-center">
             <span className="px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wide">
               Build for you
@@ -87,7 +86,6 @@ export default function HeroMetrics() {
           {/* METRICS CARD */}
           <div className="mt-16 max-w-4xl mx-auto">
             <div className="relative p-6 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md shadow-2xl">
-              {/* Title Row */}
               <div className="flex flex-col md:flex-row justify-between md:items-center gap-3 mb-6">
                 <h3 className="font-semibold text-lg">
                   Sell from day one - even with zero audience
@@ -97,7 +95,6 @@ export default function HeroMetrics() {
                 </button>
               </div>
 
-              {/* METRICS GRID */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {metrics.map((m, idx) => (
                   <div
@@ -111,7 +108,6 @@ export default function HeroMetrics() {
                 ))}
               </div>
 
-              {/* MARQUEE */}
               <div className="mt-6 overflow-hidden rounded-lg">
                 <div className="bg-[#FFF3D8] text-[#695F4C] text-[20px] py-2">
                   <div className="whitespace-nowrap flex gap-10 text-sm animate-marquee">

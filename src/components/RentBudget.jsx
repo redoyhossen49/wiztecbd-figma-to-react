@@ -23,31 +23,29 @@ export default function RentBudget({ onChange }) {
     setRightValue(Math.max(v, leftValue + 1));
   };
 
-  // Button handlers
-  const decreaseLeft = () => setLeftValue((prev) => Math.max(prev - 10, min));
+  const resetRange = () => {
+    setLeftValue(200);
+    setRightValue(650);
+  };
 
   const leftPercent = ((leftValue - min) / (max - min)) * 100;
   const rightPercent = ((rightValue - min) / (max - min)) * 100;
 
   return (
     <div className="border p-4 rounded-xl space-y-4">
-      {/* Buttons */}
       <div className="flex justify-between items-center ">
         <p className="font-medium ">Rent Budget</p>
-        <button onClick={decreaseLeft} className=" text-black text-2xl">
+        <button onClick={resetRange} className=" text-black text-2xl">
           -
         </button>
       </div>
 
-      {/* Horizontal line */}
       <div className="w-full h-[2px] bg-gray-300"></div>
 
       {/* Range Slider */}
       <div className="relative w-full h-12 flex items-center">
-        {/* BACK TRACK */}
         <div className="absolute left-0 right-0 h-[10px] rounded-full bg-[#E5C7D4]"></div>
 
-        {/* ACTIVE RANGE */}
         <div
           className="absolute h-[10px] rounded-full bg-[#57002A]"
           style={{

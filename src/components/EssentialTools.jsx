@@ -39,7 +39,6 @@ export default function EssentialTools() {
 
   return (
     <div className="w-full flex flex-col items-center bg-[#F7F1E8] py-14 px-4 sm:px-6 lg:px-10">
-      {/* Heading */}
       <div className="text-center mb-12">
         <p className="text-xs tracking-wide font-semibold mb-2">
           ESSENTIAL TOOLS
@@ -57,7 +56,6 @@ export default function EssentialTools() {
         </p>
       </div>
 
-      {/* Grid */}
       <div
         className="
           grid grid-cols-1 
